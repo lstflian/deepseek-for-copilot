@@ -62,7 +62,7 @@ export function toChatInfo(
 		maxInputTokens: m.maxInputTokens,
 		maxOutputTokens: m.maxOutputTokens,
 		isBYOK: true,
-		isUserSelectable: true,
+		isUserSelectable: !retirement,
 		capabilities: {
 			toolCalling: m.capabilities.toolCalling,
 			imageInput: m.capabilities.imageInput,
